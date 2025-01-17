@@ -1,0 +1,28 @@
+body {
+    background-color: #f0f8ff; /* AliceBlue */
+    color: #333; /* Dark text color for contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+   margin-bottom: 20px;
+}
+
+pre {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    white-space: pre-wrap; /* Ensure long lines wrap */
+}
