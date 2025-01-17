@@ -1,5 +1,5 @@
-const character = "#"
-const count = 20
+const character = "⭐️"
+const count = 30
 const rows = []
 let inverted = false;
 
@@ -19,8 +19,12 @@ while (rows.length < count) {
 let result = ""
 
 for (const row of rows) {
-    result +=  row + "\n"
+  for (const char of row) {
+    const delay = Math.random() * 3
+     result += `<span class="blink" style="animation-delay: ${delay}s;" >${char}</span>`;
+      }
+    result += "<br>"
 }
 
-document.getElementById("tree").textContent = result;
+document.getElementById("tree").innerHTML = result;
 
